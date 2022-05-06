@@ -1,0 +1,135 @@
+/*Navbar*/
+.navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
+}
+
+.nav-link {
+   color: purple;
+   font-weight: bold;
+}
+
+/*body padding*/
+body {
+  padding-top: 80px;
+}
+
+/*Jumbotron*/
+.jumbotron {
+    background-image: url(images/Jumbotron-photo2.jpg);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    font-size: 20px;
+} 
+
+/*testimonial*/
+.checked {
+   color: orange;
+}
+
+/*footer*/
+.fa-store-alt-slash {
+   color: purple;
+}
+
+.page-footer img {
+  border: 1px solid teal;
+}
+
+.page-footer .footer-brand {
+  margin-left: 60px;
+}
+
+@media (max-width: 800px) {
+   .page-footer .col-md-4 {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+}
+
+   .page-footer .footer-brand {
+      margin-left: 0;
+}
+}
+
+/*-------------Product-------------*/
+
+/*header*/
+.header img {
+  display: inline;
+  width: 150px;
+  height: auto;
+}
+
+.header h1 {
+  display: inline;
+  position: relative;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .header img, 
+  .header h1 {
+     text-align: center;
+     width: 100%;
+}
+}
+
+/*video*/
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .center {
+     text-align: center;
+     width: 100%;
+}
+}
+
+/*Carousel*/
+.carousel-multi-item.v-2 .carousel-inner .carousel-item.active,
+.carousel-multi-item.v-2 .carousel-item-next,
+.carousel-multi-item.v-2 .carousel-item-prev {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; 
+}
+
+.carousel-multi-item.v-2 .carousel-item-right.active,
+.carousel-multi-item.v-2 .carousel-item-next {
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+     transform: translateX(50%); 
+}
+
+.carousel-multi-item.v-2 .carousel-item-left.active,
+.carousel-multi-item.v-2 .carousel-item-prev {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+     transform: translateX(-50%); 
+}
+
+.carousel-multi-item.v-2 .carousel-item-right,
+.carousel-multi-item.v-2 .carousel-item-left {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+     transform: translateX(0); 
+}
+
+/*-------------Checkout-------------*/
+
+.lh-condensed { 
+    line-height: 1.25;
+}
+
+
+
+
+

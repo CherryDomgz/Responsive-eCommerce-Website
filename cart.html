@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cherry Dominguez-Final Project-Shopping Cart | Ecommerce Website Design</title>
+    
+    <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+      <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+    <!-- Icon and Font Library -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!--external CSS -->
+      <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+        font-family: 'Poppins';
+      }
+
+      th {
+        color: purple;
+      }
+
+      td {
+        color: teal;
+      }
+    </style>
+     
+</head>
+
+<body>
+
+<!-- ================Navbar======================= -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-custom" style="background-color: lavenderblush;">
+     <a class="navbar-brand" href="index.html">
+    <img src="images/peacefullife.png" width="80" height="50" alt="peaceful life shoppe store logo" loading="lazy">
+     </a>
+
+    <!-- Collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <!--links-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+     
+     <!--left-->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="details.html">Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shipping.html">Shipping</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="checkout.html">Checkout</a>
+        </li>
+      </ul>
+
+     <!--right-->
+       <ul class="nav navbar-nav nav-flex-icons ml-auto mt-1">
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link waves-effect" title="Contact Us">
+             <i class="material-icons" aria-hidden="true" style="font-size:33px;">mail</i>
+            </a>
+         </li>
+       </ul> 
+      <ul class="nav navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link waves-effect" title="Shopping Cart">
+             <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:28px;"></i>
+            </a>
+         </li>
+       </ul>
+    </div>
+        
+  </nav>
+<!-- end of Navbar -->
+
+<!--==============header====================-->
+<div class="header font-weight-normal text-center mt-4 mb-4">
+  <h1 style="color:purple;">SHOPPING CART</h1>
+</div><!--end of header-->
+
+<!--=====================Shopping Cart========================-->
+<div class="container" >
+
+  <!--Section: Content-->
+  <section>
+
+    <!-- Shopping Cart table -->
+    <div class="table-responsive">
+
+      <table class="table product-table mb-0">
+
+        <!-- Table head -->
+        <thead style="text-align:center;">
+          <tr>
+            <td>&nbsp;</td>
+            <th class="font-weight-bold">
+              <strong>Product</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>Price</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>QTY</strong>
+            </th>
+            <th class="font-weight-bold">
+              <strong>Amount</strong>
+            </th>
+            <td>&nbsp;</td>
+          </tr>
+        </thead>
+        <!-- end of Table head -->
+
+        <!-- Table body -->
+        <tbody>
+          <tr>
+            <th scope="row">
+              <img src="images/product.jpg" width="150" height="90" alt="5 pack D'Klutz Multifunctional Hanger Closet Organizer" class="img-fluid z-depth-0">
+            </th>
+            <td class="mt-5 pt-5" style="font-size:20px;" >
+                <strong>D'klutz Multifunctional Hanger Closet Organizer</strong>
+            </td>
+            <td class="mt-5 pt-5">$30 CAD</td>
+            <td class="mt-5 pt-5">
+              <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
+            </td>
+            <td class="font-weight-bold mt-5 pt-5">
+              <strong>$30 CAD</strong>
+            </td>
+           <td class="mt-5 pt-5">
+            <button id="hide" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"
+                title="Remove item">X
+              </button>
+            <tr>
+            <td colspan="2"></td>
+            <td>
+              <h4 class="mt-2">
+                <strong>Total</strong>
+              </h4>
+            </td>
+            <td class="text-right">
+              <h4 class="mt-2">
+                <strong>$30 CAD</strong>
+              </h4>
+            </td>
+            <td colspan="2" class="text-right">
+              <a class="btn btn-primary btn-rounded" href="checkout.html" role="button">Complete purchase
+                <i class="fas fa-angle-right right"></i>
+              </a>
+            </td>
+          </tr>
+        </tbody> <!-- end of Table body -->
+      </table>
+    </div><!-- end of Shopping Cart table -->
+
+  </section><!-- end of Section Content-->
+</div> <!-- end of Shopping Cart -->
+
+<!--=========================== Javascript============================= -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
