@@ -3,6 +3,8 @@ A simple responsive E-Commerce website created using HTML, CSS, JavaScript, and 
 
 🔗 https://cherrydomgz.github.io/eCommerceWebsite_HTML/
 
+📧 Email: cherry.dominguez36@gmail.com
+
 💜 PREVIEW: 💜
 
 ![image](https://user-images.githubusercontent.com/105072341/167266222-b24a3e78-d813-4cc8-b234-846cefd8fd5c.png)
